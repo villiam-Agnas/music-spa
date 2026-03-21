@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(44, 44, 44);
+  min-height: 100vh;
+}
+
+.albums {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .albums {
+    justify-content: center;
+    gap: 26px;
+  }
+}

@@ -1,0 +1,51 @@
+.wrapper {
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  flex-direction: column;
+}
+
+.album {
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  text-decoration: underline;
+  color: #e3dac9;
+}
+
+.image {
+  height: auto;
+  width: 40%;
+}
+
+.songWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.song {
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to right, #fb7241, #ffeda0) 1;
+  margin: 16px;
+  padding: 16px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e3dac9;
+}
+
+.songTitle {
+  cursor: pointer;
+}
+
+.songTitle:hover {
+  text-decoration: underline;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #e3dac9;
+}
