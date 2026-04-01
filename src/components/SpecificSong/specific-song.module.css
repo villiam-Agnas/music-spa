@@ -55,10 +55,22 @@
   width: 50%;
   padding: 12px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .title {
   color: #e3dac9;
+}
+
+.button {
+  background-color: #e3dac9;
+  display: inline-block;
+  color: black;
+  margin-top: 16px;
+  border-radius: 6px;
+  padding: 12px;
 }
 
 @media (max-width: 650px) {

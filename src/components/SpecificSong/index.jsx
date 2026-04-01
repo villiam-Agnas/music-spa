@@ -1,7 +1,12 @@
 import styles from "./specific-song.module.css"
 import { getImageURL } from "../../utils/functions"
 
-const SpecificSong = ({song}) => {
+const SpecificSong = ({song, updateFunction}) => {
+
+  const handleClick = () => {
+    updateFunction(null)
+  }
+
   return(
     <>
       <div className={`${styles[song.slug]} ${styles.box}`}>
@@ -12,6 +17,7 @@ const SpecificSong = ({song}) => {
             <audio controls>
                   <source src={song.audio} type="audio/mpeg"/>
             </audio>
+            <div className={styles.button} onClick={handleClick}>Go Back</div>
           </div>
         </div>
       </div>

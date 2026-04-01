@@ -18,7 +18,7 @@ function App() {
       <Header updateFunction={setPage} clearSong={setSong}/>
       <div className={styles.main}>
         {song ? (
-          <SpecificSong song={song} />
+          <SpecificSong song={song} updateFunction={setSong} />
         ):(
           <>
           {!page && <Home updateFunction={setPage}/>}
